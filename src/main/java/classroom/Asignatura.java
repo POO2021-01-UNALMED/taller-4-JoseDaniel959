@@ -6,15 +6,13 @@ public class Asignatura {
     String n = nombre;
     int codigoInterno;
     int codigoExterno;
-
+    
     Asignatura() {
-        this("Sin nombre");
-        this(0);
+        
+        this("Sin nombre",0,0); // 1era correcion
     }
 
-    Asignatura(int codigoInterno) {
-        this("Sin nombre", codigoInterno, 0);
-    }
+    // segunda correcion se elemina el codigo interno
 
     Asignatura(int codigoExterno) {
         this("Sin nombre", 0, codigoExterno);
@@ -36,9 +34,7 @@ public class Asignatura {
         this.nombre = nombre;
     }
 
-    void cambiarDatos(int codigoInterno) {
-        this.codigoInterno = codigoInterno;
-    }
+    // se eliminar cambiar datos codigoInterno
 
     void cambiarDatos(int codigoExterno) {
         this.codigoExterno = codigoExterno;
